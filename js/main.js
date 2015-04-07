@@ -5,6 +5,9 @@ var removeActive = function() {
 
 $(document).ready(function() {
   $('#fullpage').fullpage({
+    'navigation': true,
+    'navigationPosition': 'right',
+    'navigationTooltips': ['Profile', 'Projects', 'Skills', 'Contact & Info'],
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
 
