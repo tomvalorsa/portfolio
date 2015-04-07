@@ -171,3 +171,21 @@
   border-right: 200px solid transparent;
   border-top: 100px solid white;
 }
+
+#postcard {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  background-image: url('../img/debut_light.png');
+}
+
+#postcard h3 {
+  display: inline-block;
+}
+
+.stamp {
+  height: 100px;
+  width: 100px;
+  padding-left: 30px;
+  display: inline-block;
+}
