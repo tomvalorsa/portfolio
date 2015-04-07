@@ -78,6 +78,7 @@
 
 #section-one {
   background-color: #80deea;
+  text-align: center;
 }
 
 #section-two {
@@ -90,6 +91,12 @@
 
 #section-four {
   background-color: #e0e0e0;
+  text-align: center;
+}
+
+#tools-used {
+  /* Need to fix this bit to the bottom of the screen */
+
 }
 
 .project-pic {
@@ -262,4 +269,23 @@
   backface-visibility: visible !important;
   -webkit-animation-name: flipInX;
   animation-name: flipInX;
+}
+
+/* Sticker css */
+
+.sticker {
+  width: 100px;
+  height: 100px;
+}
+
+.ruby .sticker-img {
+  background-image: url('../img/ruby.png');
+}
+
+.js .sticker-img {
+  background-image: url('../img/js.png');
+}
+
+.backbone .sticker-img {
+  background-image: url('../img/backbone.png');
 }

@@ -28,18 +28,15 @@ $(document).ready(function() {
       if(index == 4){
         removeActive();
         $('#contact').addClass('active-footer-nav');
+        // Make it draw an arrow to the top nav buttons here. Crayon preferable (red).
       }
     }
   });
 
+  // Initialise the stickers.
+  Sticker.init('.sticker');
 
-  $('.footer-nav').click(function() {
-
-    // Not working for some reason.
-    // this.addClass('active-footer-nav');
-
-  });
-
+  // Footer nav events.
   $('#profile').click(function() {
     removeActive();
     $('#profile').addClass('active-footer-nav');
@@ -56,7 +53,6 @@ $(document).ready(function() {
     removeActive();
     $('#skills').addClass('active-footer-nav');
     $.fn.fullpage.moveTo(3, 0);
-    // And then navigate to the bottom of the site.
   });
 
   $('#contact').click(function() {
