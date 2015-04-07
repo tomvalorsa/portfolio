@@ -5,30 +5,32 @@ var removeActive = function() {
 
 $(document).ready(function() {
   $('#fullpage').fullpage({
-        afterLoad: function(anchorLink, index){
-            var loadedSection = $(this);
+    afterLoad: function(anchorLink, index){
+      var loadedSection = $(this);
 
-            if(index == 1){
-              removeActive();
-              $('#profile').addClass('active-footer-nav');
-            }
+      if(index == 1){
+        removeActive();
+        $('#profile').addClass('active-footer-nav');
+      }
 
-            if(index == 2){
-              removeActive();
-              $('#projects').addClass('active-footer-nav');
-            }
+      if(index == 2){
+        removeActive();
+        $('#projects').addClass('active-footer-nav');
+      }
 
-            if(index == 3){
-              removeActive();
-              $('#skills').addClass('active-footer-nav');
-            }
+      if(index == 3){
+        removeActive();
+        $('#skills').addClass('active-footer-nav');
+        $('.skills h4').addClass('animated flipInX').css('visibility', 'visible');
 
-            if(index == 4){
-              removeActive();
-              $('#contact').addClass('active-footer-nav');
-            }
-        }
-    });
+      }
+
+      if(index == 4){
+        removeActive();
+        $('#contact').addClass('active-footer-nav');
+      }
+    }
+  });
 
 
   $('.footer-nav').click(function() {
