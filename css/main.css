@@ -1,4 +1,4 @@
-/*---------- Nav styling ----------*/
+/* Nav styling */
 
 #header, #footer{
   position: fixed;
@@ -74,29 +74,35 @@
   height: 70px;
 }
 
-/*-------- Section styling --------*/
+/* Section styling */
 
 #section-one {
-  background-color: #80deea;
+  /* Blue - 3rd down */
+  background-color: #80cbc4;
   text-align: center;
 }
 
 #section-two {
-  background-color: #90caf9;
+  /* Teal - 3rd down */
+  background-color: #ffb74d;
 }
 
 #section-three {
+  /* Light blue - 3rd down */
   background-color: #81d4fa;
 }
 
 #section-four {
-  background-color: #e0e0e0;
+  background-color: #e57373;
   text-align: center;
 }
 
-#tools-used {
-  /* Need to fix this bit to the bottom of the screen */
+#section-four a {
+  color: white;
+}
 
+#section-four a:hover {
+  color: black;
 }
 
 .project-pic {
@@ -106,13 +112,6 @@
 
 .project-link {
   color: black;
-}
-
-.stamp {
-  height: 100px;
-  width: 100px;
-  padding-left: 30px;
-  display: inline-block;
 }
 
 .skills h4 {
@@ -128,7 +127,6 @@
   background-color: black;
   color: white;
 }
-
 
 /* Animate.css flip effect */
 .animated {

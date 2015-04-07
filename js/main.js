@@ -2,12 +2,14 @@ var removeActive = function() {
   $('.footer-nav').removeClass('active-footer-nav');
 }
 
-
 $(document).ready(function() {
+  // Initialise fullPage.js.
   $('#fullpage').fullpage({
     'navigation': true,
     'navigationPosition': 'right',
     'navigationTooltips': ['Profile', 'Projects', 'Skills', 'Contact & Info'],
+
+    // Get the footer nav and scrolling to play nicely.
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
 
@@ -25,13 +27,11 @@ $(document).ready(function() {
         removeActive();
         $('#skills').addClass('active-footer-nav');
         $('.skills h4').addClass('animated flipInX').css('visibility', 'visible');
-
       }
 
       if(index == 4){
         removeActive();
         $('#contact').addClass('active-footer-nav');
-        // Make it draw an arrow to the top nav buttons here. Crayon preferable (red).
       }
     }
   });
